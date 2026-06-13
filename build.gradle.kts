@@ -1,4 +1,4 @@
-val a = 2
-val b = 3
-
-println(a + b)
+tasks.register<Copy>("copyMessage") {
+  from("important-message.txt")
+  into(layout.buildDirectory)
+}
